@@ -28,4 +28,4 @@ Your note is **mostly accurate**, with the caveat that some of the “max” num
 [5]: https://repost.aws/articles/ARgs1iWM-ASlGSktYepaY68Q/networking-101-part-2?utm_source=chatgpt.com "Networking 101 - Part 2 | AWS re:Post"
 
 
-![Alt Text](["C:\Users\tause\OneDrive\Desktop\8da84d46-01db-44e7-a201-2032ae55129b.png"](https://chatgpt.com/backend-api/estuary/content?id=file_000000007fc07208b66ba7057253878f&ts=489568&p=fs&cid=1&sig=199dedef2a86879dfa1ef56794b6aeb0e4474cbbf192892bdb415249ed1d3463&v=0))
+![Alt Text]([assets/images/"C:\Users\tause\OneDrive\Desktop\8da84d46-01db-44e7-a201-2032ae55129b.png"](https://chatgpt.com/backend-api/estuary/content?id=file_000000007fc07208b66ba7057253878f&ts=489568&p=fs&cid=1&sig=199dedef2a86879dfa1ef56794b6aeb0e4474cbbf192892bdb415249ed1d3463&v=0))
