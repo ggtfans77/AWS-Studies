@@ -30,50 +30,52 @@ Your note is **mostly accurate**, with the caveat that some of the “max” num
 
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/08602ce8-ac22-42f6-9c97-7c23834d89b5" />
 
-```markdown
 # ✅ AWS VPC Information Validation
 
-This document validates each point from the screenshot against **official AWS VPC documentation and networking principles**.
+This document validates each point from the screenshot against **official AWS VPC documentation** and **networking principles**.
 
 ---
 
-## 🧠 VPC Rules Validation
+## 🌐 VPC Rules Validation
 
-### 1. **“Once the VPC is created, you cannot change its CIDR block range.”**
+### 1. Once the VPC is created, you cannot change its CIDR block range.
 **Status:** ✅ True  
 **Explanation:**  
 - When you create a VPC, you assign it a primary CIDR block (e.g., `10.0.0.0/16`).  
-- **You cannot modify or resize** this primary CIDR after creation.  
+- You **cannot modify or resize** this primary CIDR after creation.  
 - However, you can **add secondary CIDR blocks** later (IPv4 or IPv6), but not alter the original one.  
-**Source:** [AWS Docs – VPC CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html)
+
+**Source:** [AWS Docs – VPC CIDR Blocks](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html)
 
 ---
 
-### 2. **“If you need a different CIDR size, create a new VPC.”**
+### 2. If you need a different CIDR size, create a new VPC.
 **Status:** ✅ True  
 **Explanation:**  
-If your existing VPC’s CIDR (e.g., /16) is too large or too small, you cannot resize it.  
-→ You must **create a new VPC** with the desired CIDR range and migrate resources.
+If your existing VPC’s CIDR (e.g., `/16`) is too large or too small, you cannot resize it.  
+➡️ You must **create a new VPC** with the desired CIDR range and migrate resources.
 
 ---
 
-### 3. **“The different subnets within a VPC cannot overlap.”**
+### 3. The different subnets within a VPC cannot overlap.
 **Status:** ✅ True  
 **Explanation:**  
 Each subnet in a VPC must have a **non-overlapping CIDR block** within the VPC’s CIDR range.  
-Example:  
+
+**Example:**  
 - ✅ `10.0.1.0/24` and `10.0.2.0/24`  
 - ❌ `10.0.1.0/24` and `10.0.1.128/25` (overlaps)
 
 ---
 
-### 4. **“You can however expand your VPC CIDR by adding new/extra IP address ranges (except GovCloud & AWS China).”**
-**Status:** ✅ True (with a note)  
+### 4. You can expand your VPC CIDR by adding new or extra IP address ranges (except GovCloud & AWS China).
+**Status:** ✅ True *(with a note)*  
 **Explanation:**  
 You can **add secondary CIDR blocks** to an existing VPC, increasing its address space.  
 - Up to **5 IPv4 CIDR blocks per VPC** (can request higher limits).  
 - **AWS GovCloud** and **AWS China** regions may have restrictions.  
-**Source:** [AWS Docs – Add CIDR block to VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#AddCIDR)
+
+**Source:** [AWS Docs – Add CIDR Block to VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#AddCIDR)
 
 ---
 
@@ -82,17 +84,19 @@ You can **add secondary CIDR blocks** to an existing VPC, increasing its address
 | Component | Description | Validity |
 |------------|--------------|-----------|
 | **CIDR & IP address subnets** | Defines network range and logical separation of resources. | ✅ |
-| **Implied Router & Routing Table** | Each VPC automatically gets an implied router; routing tables define traffic flow. | ✅ |
-| **Internet Gateway** | Allows communication between VPC resources and the internet. | ✅ |
+| **Implied Router & Routing Table** | Each VPC automatically includes an implied router; routing tables define traffic flow. | ✅ |
+| **Internet Gateway** | Enables communication between VPC resources and the Internet. | ✅ |
 | **Security Groups** | Instance-level firewall (stateful). | ✅ |
 | **Network ACL** | Subnet-level firewall (stateless). | ✅ |
 | **Virtual Private Gateway** | Used for VPN connection between VPC and on-premises network. | ✅ |
 | **Peering Connections** | Connects two VPCs to communicate using private IPs. | ✅ |
-| **Elastic IP** | Static, public IPv4 address for EC2 or NAT. | ✅ |
+| **Elastic IP** | Static, public IPv4 address for EC2 or NAT gateway. | ✅ |
 
 ---
 
-## 🏁 **Conclusion**
-Every statement and listed component in the screenshot is **100% correct and aligns with AWS official documentation**.  
-It provides a **concise, accurate summary** of key **VPC fundamentals**, especially around CIDR behavior, subnet rules, and essential VPC components.
-```
+## 🏁 Conclusion
+
+Every statement and component listed in the screenshot is **accurate** and aligns with **AWS official documentation**.  
+It provides a **concise, correct summary** of core **VPC fundamentals**, including CIDR behavior, subnet rules, and primary components.
+
+---
