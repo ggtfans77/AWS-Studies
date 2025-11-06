@@ -26,6 +26,3 @@ Your note is **mostly accurate**, with the caveat that some of the “max” num
 [3]: https://d1.awsstatic.com/whitepapers/best-practices-vpcs-networking-amazon-workspaces-deployments.pdf?utm_source=chatgpt.com "Amazon Web Services"
 [4]: https://awsdocs.s3.amazonaws.com/VPC/latest/vpc-ug.pdf?utm_source=chatgpt.com "Amazon Virtual Private Cloud"
 [5]: https://repost.aws/articles/ARgs1iWM-ASlGSktYepaY68Q/networking-101-part-2?utm_source=chatgpt.com "Networking 101 - Part 2 | AWS re:Post"
-
-
-![Alt Text]"C:\Users\tause\OneDrive\Desktop\8da84d46-01db-44e7-a201-2032ae55129b.png"
