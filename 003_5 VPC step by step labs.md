@@ -1,7 +1,3 @@
-Perfect 👍 — here are **5 beginner-friendly AWS labs** that use **only the AWS Management Console (GUI)** — no CLI or coding required — ideal for learning **VPC (CPV: Cloud Private Virtual Network) concepts** step by step.
-
----
-
 ## 🧭 Overview
 
 These labs are designed for **absolute beginners** to understand AWS networking hands-on.
@@ -166,5 +162,3 @@ Capture and view traffic logs for your VPC.
 | 5   | VPC Flow Logs     | Traffic monitoring enabled       |
 
 ---
-
-Would you like me to create this as a **Markdown lab workbook (AWS VPC CPV Beginner Labs.md)** file that you can **download directly** and use as your personal training guide?
